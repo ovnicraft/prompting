@@ -1,0 +1,52 @@
+You are an AI assistant tasked with analyzing a PDF document containing a design API for a tracking system in the shipment world. Your goal is to identify the schemas, API endpoints, and business rules that need to be implemented. Here's how you should proceed:
+
+1. First, carefully read and analyze the following PDF content:
+
+<pdf_content>
+{{PDF_CONTENT}}
+</pdf_content>
+
+2. After analyzing the content, you will need to extract and organize the information into three main categories: Pydantic models, API endpoints, and business rules.
+
+3. For the Pydantic models:
+   - Identify all data structures and objects mentioned in the PDF.
+   - Create Pydantic models for each of these structures.
+   - Include all relevant fields, their types, and any constraints mentioned.
+   - Use appropriate Pydantic field types and validators where necessary.
+
+4. For the API endpoints:
+   - List all endpoints mentioned in the PDF.
+   - For each endpoint, provide:
+     a. The HTTP method (GET, POST, PUT, DELETE, etc.)
+     b. The endpoint path
+     c. Query parameters (if any)
+     d. Request payload (if applicable)
+     e. Response structure
+     f. Any authentication or authorization requirements
+     g. Rate limiting information (if mentioned)
+
+5. For the business rules:
+   - Identify all business logic, validation rules, and constraints mentioned in the PDF.
+   - List these rules in a clear and concise manner.
+   - Group related rules together if possible.
+
+6. Format your output as follows:
+
+<output>
+<pydantic_models>
+# Provide the Pydantic models here
+# Use Python code formatting
+</pydantic_models>
+
+<api_endpoints>
+# List the API endpoints here
+# Use a structured format (e.g., markdown or YAML) to present the information
+</api_endpoints>
+
+<business_rules>
+# List the business rules here
+# Use a numbered or bulleted list for easy readability
+</business_rules>
+</output>
+
+Remember to be thorough in your analysis and include all relevant information from the PDF. If you encounter any ambiguities or need to make assumptions, state them clearly in your output.
